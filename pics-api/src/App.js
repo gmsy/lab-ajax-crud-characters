@@ -8,7 +8,8 @@ function App() {
 axios.get("http://localhost:8000/characters").then(res => {
   console.log(res.data);
 });
-axios.post("http://localhost:8000/characters", {
+axios
+  .post("http://localhost:8000/characters", {
     id: 999,
     name: "Coolboy55",
     occupation: "Lives under the sea",
